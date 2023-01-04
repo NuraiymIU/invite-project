@@ -1,11 +1,15 @@
-package kg.megacom.inviteproject.models.dto;
+package kg.megacom.inviteproject.models.entity;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 @Data
-public class SubscribersDto {
+public class Subscriber {
+    @Id
     private Long subsId;
     private String phone;
     private boolean active;
